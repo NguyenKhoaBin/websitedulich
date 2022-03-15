@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400&display=swap');
+:root{
+    --main-color:#6DBFE2;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.video_container{
+    height: 100vh;
+    width: 100vw;
+}
+.video_container-saigon{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.header_top{
+    position: relative;
+}
+.icon_menubar{
+    font-size: 35px;
+    position: fixed;
+    margin: 15px;
+    cursor: pointer;
+    color: var(--main-color);
+    z-index: 1;
+}
+.menubar_list{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    padding: 150px 0 0 50px;
+    background-color: var(--main-color);
+    display: none;
+    z-index: 1;
+    opacity: 0;
+    background: none;
+}
+.menubar_list.active{
+    display: block;
+    opacity: 1;
+}
+.menubar_item{
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    animation: fade .3s linear backwards;
+    animation-delay: calc(0.3s*var(--x));
+}
+@keyframes fade{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+}
+.menubar_item-link{
+    display: block;
+    background-color: var(--main-color);
+    padding: 12px;
+    transition: all .3s ease;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+    user-select: none;
+}
+.menubar_item-link:hover{
+    background-color: tomato;
+}
+.header_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 400px;
+    background-color: rgba(255,255,255, 0.1);
+    padding: 150px 30px 0 30px;
+    text-align: center;
+}
+.header_content-title{
+    color: var(--main-color);
+}
+.header_content-slogan{
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.form-group{
+    display: block;
+    padding: 7px;
+    width: 100%;
+}
+.header_form label{
+    text-align: left;
+}
+.header_form{
+    background-color: white;
+    border-radius: 2px;
+    padding: 15px;
+    
+}
+.header_form-btn{
+    margin-top: 15px;
+    padding: 7px 35px;
+    font-size: 18px;
+    color:#fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.header_form-btn:hover{
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+/* ----nice place--- */
+.nice_place{
+    padding: 100px 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+.nice_place-item{
+    width: 30%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+.nice_place-item:hover .nice_place-text{
+    transform: translateX(0);
+}
+.nice_place-img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.nice_place-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:260px;
+    padding: 12px;
+    background: linear-gradient(to right,rgba(0,0,0,0.8),rgba(255,255,255,0));
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+.name_place{
+    color: var(--main-color);
+}
+.about_tour{
+    color: rgba(255,255,255, 0.9);
+    margin: 12px 0;
+    
+}
+.iconstar{
+    color: yellow;
+}
+.buy_tour-btn{
+    position: absolute;
+    font-size: 16px;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 40px;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.buy_tour-btn:hover{
+    color: #fff;
+    background-color: tomato;
+}
+.container_title{
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 50px;
+    position: relative;
+}
+.container_title::before{
+    content: "";
+    height: 5px;
+    position: absolute;
+    width: 150px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container_title::after{
+    position: absolute;
+    content: "\2665";
+    width: 30px;
+    height: 30px;
+    color: red;
+    background-color: #fff;
+    border-radius: 25%;
+    bottom: -29px;
+    left: 50%;
+    transform: translateX(-50%);
+}

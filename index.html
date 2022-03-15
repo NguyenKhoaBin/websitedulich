@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c8c3f704c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Website du lịch</title>
+    
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <i class="fa-solid fa-bars icon_menubar"></i>
+        </div>
+        <ul class="menubar_list" >
+           <li class="menubar_item" style="--x:1"><a href="#" class="menubar_item-link">Trang chủ</a></li>
+           <li class="menubar_item" style="--x:2"><a href="#" class="menubar_item-link">Đặc điểm</a></li>
+           <li class="menubar_item" style="--x:3"><a href="#" class="menubar_item-link">Về chúng tôi</a></li>
+           <li class="menubar_item" style="--x:4"><a href="#" class="menubar_item-link">Bộ sưu tập</a></li>
+           <li class="menubar_item" style="--x:5"><a href="#" class="menubar_item-link">Đánh giá</a></li>
+           <li class="menubar_item" style="--x:6"><a href="#" class="menubar_item-link">Liên hệ</a></li>
+        </ul>
+        <div class="video_container">
+            <video class="video_container-saigon" src="./Video/trailer.mp4" autoplay muted loop></video>
+        </div>
+        <div class="header_content">
+            <h1 class="header_content-title">Khám phá</h1>
+            <p class="header_content-slogan">Cuộc đời là những tháng ngày khám phá</p>
+            <form action="" class="header_form">
+                <h1 class="header_form-question">Bạn muốn đi đâu hè này</h1>
+                <label for="place" class="header_form-place form-group">Địa điểm</label>
+                <select name="place" id="place" class="header_form-option form-group">
+                    <option value="#">--Chọn địa điểm--</option>
+                    <option value="#">Thừa Thiên Huế</option>
+                    <option value="#">TP.Hồ Chí Minh</option>
+                    <option value="#">Hà Nội</option>
+                </select>
+                <label for="person_numner" class="form-group">Số người</label>
+                <input type="number" min="1" placeholder="Bạn đi bao nhiêu người" id="person_numner" class="header_form-people form-group">
+                <label for="timestart" class="header_form-timestart form-group">Thời gian xuất phát</label>
+                <input type="date" id="timestart" placeholder="Ngày đi" class="timestart form-group">
+                <label for="endtime" class="header_form-endtime form-group">Thời gian trở về</label>
+                <input type="date" id="endtime" placeholder="Ngày đi" class="endtime form-group">
+                <button class="header_form-btn">Tìm kiếm</button>
+            </form>
+        </div>
+    </header>
+    <!-- ----------------------nice-place---------------------- -->
+    <section class="nice_place">
+        <div class="container">
+            <h1 class="container_title">Địa điểm nổi bật</h1>
+            <div class="nice_place-content row">
+                <div class="nice_place-item">
+                    <div>
+                        <img src="./Images/np1.jpg" alt="" class="nice_place-img">
+                    </div>
+                    <div class="nice_place-text">
+                        <h2 class="name_place">Tour Tây Bắc</h2>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <p class="about_tour">Trải nghiệm du lịch Đông Tây Bắc, du khách sẽ thỏa sức ngắm nhìn các khung cảnh mà trước đây bạn chỉ được ngắm qua ảnh, tivi hay trên internet.Tận mắt chứng kiến vẻ đẹp hùng vĩ của thiên nhiên Tây Bắc một cách chân thật nhất.</p>
+                        <button class="buy_tour-btn">Mua Tour</button>
+                    </div>
+                </div>
+
+                <div class="nice_place-item">
+                    <div >
+                        <img src="./Images/landmark.jpg" alt=""class="nice_place-img">
+                    </div>
+                    <div class="nice_place-text">
+                        <h2 class="name_place">Tour Hồ Chí Minh</h2>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <p class="about_tour">Thành phố Hồ Chí Minh (thường được gọi là Sài Gòn) là một thành phố ở miền nam Việt Nam nổi tiếng với nhiều địa điểm tham quan đẹp mắt,nổi bật trong số đó là tòa nhà Landmark 81.</p>
+                        <button class="buy_tour-btn">Mua Tour</button>
+                    </div>
+                </div>
+
+                <div class="nice_place-item">
+                    <div >
+                        <img src="./Images/chuathienmu.jpg" alt=""class="nice_place-img">
+                    </div>
+                    <div class="nice_place-text">
+                        <h2 class="name_place">Tour Huế</h2>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <i class="fa-solid fa-star iconstar"></i>
+                        <p class="about_tour">Nhắc đến thành phố Huế chúng ta không thể không nhắc đến chùa Thiên Mụ,là một ngôi chùa cổ hơn 400 năm tuổi nằm lặng lẽ trên đồi Hà Khê.</p>
+                        <button class="buy_tour-btn">Mua Tour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
