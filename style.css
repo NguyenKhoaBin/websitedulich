@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 ul{
     list-style: none;
 }
@@ -16,7 +17,7 @@ a{
 }
 .video_container{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 .video_container-saigon{
     height: 100%;
@@ -35,7 +36,7 @@ a{
     z-index: 1;
 }
 .menubar_list{
-    width: 300px;
+    width: 296px;
     height: 100vh;
     position: fixed;
     right: 0;
@@ -62,6 +63,12 @@ a{
         transform: translateY(-30px);
         opacity: 0;
     }
+}
+.h2_title{
+    color: #bddfee;
+}
+.h3_title{
+    color: #74cbf0;
 }
 .menubar_item-link{
     display: block;
@@ -173,10 +180,10 @@ a{
 }
 .buy_tour-btn{
     position: absolute;
-    font-size: 16px;
     bottom: 7px;
-    left: 50%;
-    transform: translateX(-50%);
+}
+.btn{
+    font-size: 16px;
     width: 120px;
     height: 40px;
     background-color: var(--main-color);
@@ -186,17 +193,17 @@ a{
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-.buy_tour-btn:hover{
+.btn:hover{
     color: #fff;
     background-color: tomato;
 }
-.container_title{
+.h1_title{
     text-align: center;
     color: var(--main-color);
     margin-bottom: 50px;
     position: relative;
 }
-.container_title::before{
+.h1_title::before{
     content: "";
     height: 5px;
     position: absolute;
@@ -207,7 +214,7 @@ a{
     left: 50%;
     transform: translateX(-50%);
 }
-.container_title::after{
+.h1_title::after{
     position: absolute;
     content: "\2665";
     width: 30px;
@@ -218,4 +225,241 @@ a{
     bottom: -29px;
     left: 50%;
     transform: translateX(-50%);
+}
+.about_content-left{
+    width: 50%;
+    height: 400px;
+}
+.about_img{
+    width: 100%;
+    height: 100%;
+}
+.about_content-right{
+    width: 50%;
+    height: 400px;
+    padding: 50px;
+}
+.about_question{
+    color: var(--main-color);
+}
+.about_content-text{
+    margin: 25px 0;
+    font-weight: 800;
+}
+.service{
+    height: 100%;
+    margin-top: 15px;
+}
+.service_item{
+    width: 30%;
+    background-color: #bddfee;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    height: 200px;
+    transition: all .3s ease;
+}
+.service_item:hover{
+    box-shadow: 2px 2px 10px #000;
+    transform: translateX(-2px);
+    transform: translateY(-1.5px);
+}
+.service_img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.service_description{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    font-weight: 700;
+    transform: translateX(-50%);
+}
+
+.tour_row{
+    width: 100%;
+    height: 350px;
+}
+.content_left{
+    width: 50%;
+    height: 100%;
+}
+.content_right{
+    width: 50%;
+    height: 100%;
+}
+.tour_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tour_summer-title{
+    margin-top: 100px;
+}
+.tour_content{
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+  border-radius: 2px;
+  height: 260px;
+}
+.tour_about{
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+
+.tour_description{
+    margin: 20px 0;
+    font-weight: 800;
+}
+/* ----------------------------comment-------------------------------- */
+.comment{
+    padding: 100px 0;
+}
+.comment_content{
+    width: 100%;
+    min-height: 275px;
+}
+.comment_item{
+    height: 100%;
+    width: 30%;
+    padding: 20px 18px 18px 18px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    transition: all .3s ease;
+}
+.comment_item:hover{
+    box-shadow: 2px 2px 10px var(--main-color);
+}
+.comment_item:hover .comment_icon{
+    transform: translateY(-12px);
+}
+.comment_icon{
+    height: 50px;
+    width: 50px;
+    transition: all .3s ease;
+}
+.comment_text{
+    position: relative;
+    padding-bottom: 35px;
+    border-bottom: 2px solid  #bddfee;
+    text-align: center;
+    height: 165px;
+}
+.comment_info{
+    padding: 15px 10px 12px 10px;
+}
+.comment_info-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.comment_info-text{
+    width: 75%;
+    font-size: 85%;
+}
+.info_text{
+    margin-top: 5px;
+}
+.comment_description{
+    padding: 12px;
+}
+.comment_description,.info_text{
+    font-weight: 600;
+}
+/* ---------------------------------sign up-------------------------- */
+.sign_up-content{
+    width: 100%;
+    background-color: #74cbf0;
+    padding: 50px 25px;
+    align-items: center;
+    text-align: center;
+    min-height: 110px;
+}
+.sign_up-input{
+    width: 50%;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 5px;
+}
+.sign_up-btn{
+    width: 116px;
+    height: 38px;
+    border-radius: 8px;
+}
+/* -----------------------------------contact------------------------- */
+.contact{
+    padding: 100px 0;
+}
+.contact_input{
+    width: 49%;
+    background-color: #dddddd;
+    height: 38px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.contact_text-area{
+    width: 100%;
+    min-height: 110px;
+    height: 120px;
+    resize: none;
+    background-color: #dddddd;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.contact_btn{
+    text-align: center;
+}
+.contact_btn-submit{
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 18px;
+}
+/* ------------------responsive--------------- */
+@media (max-width: 575px) {
+    
+.header_content {
+    width: 100%;
+}
+.nice_place-item{
+    width: 100%;
+    margin-bottom: 6px;
+}
+.nice_place {
+    padding: 46px 0;
+}
+.comment {
+    padding: 30px 0;
+}
+.tour_summer-title{
+    margin-top: 30px;
+}
+.tour_content{
+    height: 100%;
+}
+.tour_content-img,
+.tour_about,
+.content_right,.content_left{
+    width: 100%;
+}
+.comment_item{
+    width: 100%;
+}
+.row_reverse{
+    flex-direction: column-reverse;
+}
 }
